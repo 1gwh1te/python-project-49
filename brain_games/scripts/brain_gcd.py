@@ -35,7 +35,6 @@ def nod(num):
 
 
 def main():
-    num = 1
     print(question)
     index = 1
     while index <= 3:

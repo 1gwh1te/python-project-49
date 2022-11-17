@@ -12,10 +12,9 @@ def progression(num):
     start = random.randint(0, 5)
     counter = random.randint(1, 4)
     a = list(range(start, 26, counter))
-    delete = random.randint(0,len(a)-1)
-    check = a[delete]
+    delete = random.randint(0, len(a) - 1)
     b = a.pop(delete)
-    c = a.insert(delete, '..')
+    a.insert(delete, '..')
     to_print = ' '.join(str(item) for item in a)
     resp = ''
     result = 0
