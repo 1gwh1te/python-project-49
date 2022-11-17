@@ -9,16 +9,17 @@ question = "What number is missing in the progression?"
 
 
 def progression(num):
-    start = random.randint(0, 10)
-    counter = random.randint(1, 5)
-    a = list(range(start, 20, counter))
+    start = random.randint(0, 5)
+    counter = random.randint(1, 4)
+    a = list(range(start, 26, counter))
     delete = random.randint(0,len(a)-1)
     check = a[delete]
     b = a.pop(delete)
     c = a.insert(delete, '..')
+    to_print = ' '.join(str(item) for item in a)
     resp = ''
     result = 0
-    ans = prompt.string(f"Question: {a}\nYour answer: {resp}")
+    ans = prompt.string(f"Question: {to_print}\nYour answer: {resp}")
     if int(ans) == int(b):
         print("Correct!")
         result = 1

@@ -9,4 +9,4 @@
 ### Asciinema brain-gcd
 [![asciicast](https://asciinema.org/a/e4oHPkYneleAnKrnZPWkiWRB2.svg)](https://asciinema.org/a/e4oHPkYneleAnKrnZPWkiWRB2)
 ### Asciinema brain-progression
-[![asciicast](https://asciinema.org/a/J2nHVcnQXkjKYG1DHinl1MqIM.svg)](https://asciinema.org/a/J2nHVcnQXkjKYG1DHinl1MqIM)
+[![asciicast](https://asciinema.org/a/LQyPsJA55qlzFU8WWc9jYeibq.svg)](https://asciinema.org/a/LQyPsJA55qlzFU8WWc9jYeibq)
