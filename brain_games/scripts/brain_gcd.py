@@ -29,7 +29,7 @@ def nod(num):
         print('Correct!')
         result = 1
     if int(ans) != find_nod(n1, n2):
-        print(f"'{ans}' is wrong answer ;(. Correct answer was '{res}'.\nLet`s try again, {name}")
+        print(f"'{ans}' is wrong answer ;(. Correct answer was '{res}'.\nLet's try again, {name}!")
         result = 2
     return result
 
