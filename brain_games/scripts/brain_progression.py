@@ -23,7 +23,7 @@ def progression(num):
         print("Correct!")
         result = 1
     if int(ans) != int(b):
-        print(f"'{ans}' is wrong answer ;(. Correct answer was '{b}'.\nLet`s try again, {name}")
+        print(f"'{ans}' is wrong answer ;(. Correct answer was '{b}'.\nLet's try again, {name}!")
         result = 2
     return result
 
