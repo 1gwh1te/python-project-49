@@ -24,12 +24,13 @@ def nod(num):
     res = find_nod(n1, n2)
     resp = ''
     result = 0
+    t = f" is wrong answer ;(. Correct answer was '{res}'.\nLet`s try again, "
     ans = prompt.string(f'Question: {n1} {n2}\nYour answer: {resp}')
     if int(ans) == find_nod(n1, n2):
         print('Correct!')
         result = 1
     if int(ans) != find_nod(n1, n2):
-        print(f"'{ans}' is wrong answer ;(. Correct answer was '{res}'.\nLet`s try again, {name}")
+        print(f"{ans}{t}{name}")
         result = 2
     return result
 

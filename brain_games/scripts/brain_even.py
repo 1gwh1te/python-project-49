@@ -16,6 +16,8 @@ def is_even(num):
 def question(num):
     response = ''
     result = 0
+    t1 = "\"no\" is wrong answer ;(. Correct answer was \'yes\'\nLet's try again, "
+    t2 = "\"yes\" is wrong answer ;(. Correct answer was \'no\'\nLet's try again, "
     num = random.randint(0, 100)
     answer = prompt.string(f'Question: {num} \nYour answer: {response}')
     if answer != 'yes' and answer != 'no':
@@ -28,10 +30,10 @@ def question(num):
         print('Correct!')
         result = 1
     if is_even(num) is True and answer == 'no':
-        print(f"\"no\" is wrong answer ;(. Correct answer was \'yes\'\nLet's try again, {name}!")
+        print(f"{t1}{name}!")
         result = 3
     if is_even(num) is False and answer == 'yes':
-        print(f"\"yes\" is wrong answer ;(. Correct answer was \'no\'\nLet's try again, {name}!")
+        print(f"{t2}{name}!")
         result = 4
     return result
 

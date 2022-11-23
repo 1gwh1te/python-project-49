@@ -15,28 +15,30 @@ def is_prime(num):
             if (num % i) == 0:
                 result = True
                 break
-        if result == True:
+        if result is True:
             return False
         else:
             return True
 
 
 def check(num):
+    text1 = "is wrong answer ;(. Correct answer was 'no'.\nLet`s try again, "
+    text2 = "is wrong answer ;(. Correct answer was 'yes'.\nLet`s try again, "
     result = 0
     resp = ''
     num = random.randint(1, 100)
     ans = prompt.string(f"Question: {num}\nYour answer: {resp}")
-    if ans == 'yes' and is_prime(num) == True:
+    if ans == 'yes' and is_prime(num) is True:
         print("Correct!")
         result = 1
-    if ans == 'no' and is_prime(num) == False:
+    if ans == 'no' and is_prime(num) is False:
         print("Correct!")
         result = 1
-    if ans == 'yes' and is_prime(num) == False:
-        print(f"'{ans}' is wrong answer ;(. Correct answer was 'no'.\nLet`s try again, {name}")
+    if ans == 'yes' and is_prime(num) is False:
+        print(f"'{ans}{text1}{name}")
         result = 2
-    if ans == 'no' and is_prime(num) == True:
-        print(f"'{ans}' is wrong answer ;(. Correct answer was 'yes'.\nLet`s try again, {name}")
+    if ans == 'no' and is_prime(num) is True:
+        print(f"'{ans}{text2}{name}")
         result = 2
     return result
 
@@ -57,4 +59,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-

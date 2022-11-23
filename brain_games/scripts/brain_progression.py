@@ -18,12 +18,13 @@ def progression(num):
     to_print = ' '.join(str(item) for item in a)
     resp = ''
     result = 0
+    t = f" is wrong answer ;(. Correct answer was '{b}'.\nLet`s try again, "
     ans = prompt.string(f"Question: {to_print}\nYour answer: {resp}")
     if int(ans) == int(b):
         print("Correct!")
         result = 1
     if int(ans) != int(b):
-        print(f"'{ans}' is wrong answer ;(. Correct answer was '{b}'.\nLet`s try again, {name}")
+        print(f"'{ans}{t}{name}")
         result = 2
     return result
 
