@@ -5,7 +5,7 @@ import prompt
 welcoming = print("Welcome to the Brain Games!")
 name = prompt.string("May I have your name? ")
 hello = print(f"Hello, {name}!")
-question = "Answer \"yes\" if given number is prime. Otherwise answer \"no\""
+question = "Answer \"yes\" if given number is prime. Otherwise answer \"no\"."
 
 
 def is_prime(num):
