@@ -33,10 +33,10 @@ def check(num):
         print("Correct!")
         result = 1
     if ans == 'yes' and is_prime(num) == False:
-        print(f"'{ans}' is wrong answer ;(. Correct answer was 'no'.\nLet`s try again, {name}")
+        print(f"'{ans}' is wrong answer ;(. Correct answer was 'no'.\nLet's try again, {name}!")
         result = 2
     if ans == 'no' and is_prime(num) == True:
-        print(f"'{ans}' is wrong answer ;(. Correct answer was 'yes'.\nLet`s try again, {name}")
+        print(f"'{ans}' is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, {name}!")
         result = 2
     return result
 
