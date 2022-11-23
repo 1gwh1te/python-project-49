@@ -45,7 +45,7 @@ def main():
         if result == 3 or result == 4:
             break
         if index == 3 and result == 1:
-            print(f'Congratulations, {name}')
+            print(f'Congratulations, {name}!')
             break
         index += 1
 
