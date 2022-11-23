@@ -4,6 +4,8 @@ import random
 
 print("Welcome to the Brain Games!")
 name = prompt.string('May I have your name? ')
+t1 = "\"no\" is wrong answer ;(. Correct answer was \'yes\'\nLet's try again, "
+t2 = "\"yes\" is wrong answer ;(. Correct answer was \'no\'\nLet's try again, "
 
 
 def is_even(num):
@@ -16,8 +18,6 @@ def is_even(num):
 def question(num):
     response = ''
     result = 0
-    t1 = "\"no\" is wrong answer ;(. Correct answer was \'yes\'\nLet's try again, "
-    t2 = "\"yes\" is wrong answer ;(. Correct answer was \'no\'\nLet's try again, "
     num = random.randint(0, 100)
     answer = prompt.string(f'Question: {num} \nYour answer: {response}')
     if answer != 'yes' and answer != 'no':

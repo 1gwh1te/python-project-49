@@ -8,6 +8,7 @@ question = "What is the result of the expression?"
 
 
 def calc(num1):
+    t = ' is wrong answer ;(. Correct answer was '
     resp = ''
     res = 0
     check = 0
@@ -26,7 +27,7 @@ def calc(num1):
         print('Correct!')
         check = 1
     if int(ans) != res:
-        print(f"'{ans}' is wrong answer ;(. Correct answer was '{res}'.\nLet's try again, {name}!")
+        print(f"'{ans}{t}{res}'.\nLet's try again, {name}!")
         check = 2
     return check
 
