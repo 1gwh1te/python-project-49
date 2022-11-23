@@ -30,7 +30,7 @@ def nod(num):
         print('Correct!')
         result = 1
     if int(ans) != find_nod(n1, n2):
-        print(f"{ans}{t}{name}")
+        print(f"{ans}{t}{name}!")
         result = 2
     return result
 
