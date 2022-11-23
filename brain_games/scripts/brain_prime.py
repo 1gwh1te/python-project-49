@@ -22,8 +22,8 @@ def is_prime(num):
 
 
 def check(num):
-    text1 = " is wrong answer ;(. Correct answer was 'no'.\nLet`s try again, "
-    text2 = " is wrong answer ;(. Correct answer was 'yes'.\nLet`s try again, "
+    text1 = " is wrong answer ;(. Correct answer was 'no'.\nLet's try again, "
+    text2 = " is wrong answer ;(. Correct answer was 'yes'.\nLet's try again, "
     result = 0
     resp = ''
     num = random.randint(1, 100)
@@ -35,10 +35,10 @@ def check(num):
         print("Correct!")
         result = 1
     if ans == 'yes' and is_prime(num) is False:
-        print(f"'{ans}{text1}{name}")
+        print(f"'{ans}{text1}{name}!")
         result = 2
     if ans == 'no' and is_prime(num) is True:
-        print(f"'{ans}{text2}{name}")
+        print(f"'{ans}{text2}{name}!")
         result = 2
     return result
 

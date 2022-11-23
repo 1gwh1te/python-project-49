@@ -24,7 +24,7 @@ def progression(num):
         print("Correct!")
         result = 1
     if int(ans) != int(b):
-        print(f"'{ans}'{t}'{b}'.\nLet`s try again, \"{name}")
+        print(f"'{ans}'{t}'{b}'.\nLet's try again, \"{name}!")
         result = 2
     return result
 
