@@ -26,7 +26,7 @@ def calc(num1):
         print('Correct!')
         check = 1
     if int(ans) != res:
-        print(f"'{ans}' is wrong answer ;(. Correct answer was '{res}'.\nLet`s try again, {name}")
+        print(f"'{ans}' is wrong answer ;(. Correct answer was '{res}'.\nLet's try again, {name}!")
         check = 2
     return check
 

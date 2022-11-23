@@ -41,13 +41,13 @@ def question(num):
 def main():
     index = 1
     print(f'Hello, {name}!')
-    print("Answer \"yes\" if the number is even, otherwise answer \"no\"")
+    print("Answer \"yes\" if the number is even, otherwise answer \"no\".")
     while index <= 3:
         result = question(index)
         if result == 3 or result == 4:
             break
         if index == 3 and result == 1:
-            print(f'Congratulations, {name}')
+            print(f'Congratulations, {name}!')
             break
         index += 1
 
